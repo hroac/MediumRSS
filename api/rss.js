@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
       return res.status(200).end();
     }
 
-    const rssUrl = 'https://medium.com/feed/@hraoc';
+    const rssUrl = 'https://medium.com/feed/trait-indicator';
     const response = await fetch(rssUrl);
     const xml = await response.text();
 
